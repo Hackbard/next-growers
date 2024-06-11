@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "name": "React + Next.js App",
+  "build": {
+    "phases": {
+      "install": {
+        "commands": ["npm install"]
+      },
+      "build": {
+        "commands": ["npm run build"]
+      }
+    }
+  },
+  "start": {
+    "commands": ["npm start"],
+    "shell": "node"
+  },
+  "variables": {
+    "NODE_ENV": "production",
+    "PORT": "3000"
+  },
+  "dependencies": {
+    "runtime": ["nodejs-16_x", "yarn"],
+    "build": ["gcc", "g++", "make"]
+  },
+  "settings": {
+    "cache": {
+      "enabled": true,
+      "paths": ["node_modules"]
+    }
+  }
+}
